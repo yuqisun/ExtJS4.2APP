@@ -1,7 +1,11 @@
-Ext.create('Ext.Button', {
-    text: 'Click me',
-    renderTo: Ext.getBody(),
-    handler: function() {
-        alert('You clicked the button!');
-    }
+Ext.create('Ext.panel.Panel', {
+    bodyPadding: 5,
+    items: [{
+        xtype: 'datefield',
+        fieldLabel: 'Start date'
+    }, {
+        xtype: 'datefield',
+        fieldLabel: 'End date'
+    }],
+    renderTo: Ext.getBody()
 });
